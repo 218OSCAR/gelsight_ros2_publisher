@@ -1,6 +1,4 @@
 # Gelsight_mini ROS2 publisher Setup
-# Vive Tracker ROS2 Setup (SteamVR + libsurvive)
-Vive Tracker ROS2 Setup (SteamVR + libsurvive)
 
 This document describes the setup process for using **Gelsight mini** with **ROS 2**.
 
@@ -28,6 +26,17 @@ install the gs_sdk under the ros2_ws/src:
 👉 https://github.com/joehjhuang/gs_sdk?tab=readme-ov-file
 
 ---
+## Install ffmpeg
+You can directly install ffmpeg using:
+```
+sudo apt install ffmpeg
+```
+Or you can choose to do it by creating a new conda env:
+```
+conda create -n gelsight python=3.10 ffmpeg opencv
+conda activate gelsight
+```
+
 
 ## Clone this repo, run the node and publish ros2 topic 
 You have to first clone this repo to your ros2_ws:
